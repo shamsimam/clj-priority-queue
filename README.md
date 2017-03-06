@@ -20,7 +20,8 @@ Latest stable release is 0.1.0.
 
 [Leiningen] dependency information:
 
-    [shams/priority-queue "0.1.0"]
+[![Clojars Project](https://img.shields.io/clojars/v/shams/priority-queue.svg)](https://clojars.org/shams/priority-queue)
+
 
 ### Dependencies
 

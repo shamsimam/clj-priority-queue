@@ -1,4 +1,4 @@
-(defproject shams/priority-queue "0.1.1"
+(defproject shams/priority-queue "0.1.2"
   :description "Provides a persistent priority queue implementation, written entirely in Clojure."
   :url "https://github.com/shamsimam/clj-priority-queue"
   :license {:name "Eclipse Public License - Version 1.0"

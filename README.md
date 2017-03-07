@@ -161,7 +161,7 @@ Please open issues against the [official priority-queue repo on Github](https://
 
 ## Change Log
 
-* Version 0.1.1 released on 06-Mar-2017.
+* Version 0.1.2 released on 06-Mar-2017.
   * Use `extend-protocol` to avoid if-else logic in implementation.
   * Added benchmark comparison with `java.util.PriorityQueue`
   * Changed license to Eclipse Public License - Version 1.0
@@ -179,7 +179,7 @@ Check out the benchmarks in `shams.benchmarks-test`; or run `lein benchmark`.
 If you have scenarios where the priority queue is not performing as well as expected, please let me know.
 
 Some numbers measured using the [Criterium] benchmarking library on a Mac OS 10.12.3 with 2.8 GHz Intel Core i7
-quad-core processor on version 0.1.1 of this library:
+quad-core processor on version 0.1.2 of this library:
 ```
 Insert and Remove ints at dynamic priority-500 10000 elements execution time mean
 shams/priority-queue queue: 14.882937 ms

@@ -190,7 +190,9 @@ PriorityMap: 26.438824 ms
 
 ## License
 
-Released under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
+Copyright © 2017 Shams Imam
+
+Distributed under the [Eclipse Public License](https://www.eclipse.org/legal/epl-v10.html).
 
 
 [Clojars]: http://clojars.org/

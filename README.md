@@ -16,7 +16,7 @@ Note: the `:set` variant does not allow duplicate values into the priority queue
 ## Releases and Dependency Information
 
 Releases are published on [Clojars].
-Latest stable release is 0.1.0.
+Latest stable release is 0.1.1.
 
 [Leiningen] dependency information:
 
@@ -161,6 +161,10 @@ Please open issues against the [official priority-queue repo on Github](https://
 
 ## Change Log
 
+* Version 0.1.1 released on 06-Mar-2017.
+  * Use `extend-protocol` to avoid if-else logic in implementation.
+  * Added benchmark comparison with `java.util.PriorityQueue`
+  * Changed license to Eclipse Public License - Version 1.0
 * Version 0.1.0 released on 05-Mar-2017.
 
 
@@ -174,17 +178,18 @@ The priority queue implementation is about twice as fast as the [clojure.data.pr
 Check out the benchmarks in `shams.benchmarks-test`; or run `lein benchmark`. 
 If you have scenarios where the priority queue is not performing as well as expected, please let me know.
 
-Some numbers measured using the [Criterium] benchmarking library on a Mac OS 10.12.3 with 2.8 GHz Intel Core i7 quad-core processor:
+Some numbers measured using the [Criterium] benchmarking library on a Mac OS 10.12.3 with 2.8 GHz Intel Core i7
+quad-core processor on version 0.1.1 of this library:
 ```
 Insert and Remove ints at dynamic priority-500 10000 elements execution time mean
-PriorityQueue-FIFO: 15.971518 ms
-PriorityQueue-Random: 18.875325 ms
-PriorityMap: 25.676095 ms
+shams/priority-queue queue: 14.882937 ms
+shams/priority-queue set: 17.034672 ms
+clojure.data/priority-map: 27.585774 ms
 
 Insert and Remove maps at dynamic priority-500 10000 elements execution time mean
-PriorityQueue-FIFO: 14.942025 ms
-PriorityQueue-Random: 19.038114 ms
-PriorityMap: 26.438824 ms
+shams/priority-queue-FIFO: 14.797061 ms
+shams/priority-queue-Random: 20.413193 ms
+clojure.data/priority-map: 26.444731 ms
 ```
 
 

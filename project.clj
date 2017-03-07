@@ -1,5 +1,5 @@
 (defproject shams/priority-queue "0.1.1-SNAPSHOT"
-  :description "Provides a purely Clojure priority queue implementation."
+  :description "Provides a persistent priority queue implementation, written entirely in Clojure."
   :url "https://github.com/shamsimam/clj-priority-queue"
   :license {:name "GNU General Public License v3.0"
             :url "https://www.gnu.org/licenses/gpl-3.0.en.html"}

@@ -16,7 +16,7 @@ Note: the `:set` variant does not allow duplicate values into the priority queue
 ## Releases and Dependency Information
 
 Releases are published on [Clojars].
-Latest stable release is 0.1.1.
+Latest stable release is 0.1.2.
 
 [Leiningen] dependency information:
 

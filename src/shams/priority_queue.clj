@@ -10,13 +10,9 @@
 (defn- to-seq
   "Helper function to convert the priority->elements into a seq."
   [sorted-priorities priority->elements]
-  (loop [result-vector []
-         [priority & remaining-priorities] sorted-priorities]
-    (if priority
-      (recur
-        (concat result-vector (priority->elements priority))
-        remaining-priorities)
-      (seq result-vector))))
+  (->> sorted-priorities
+       (mapcat priority->elements)
+       (seq)))
 
 (defprotocol Bufferable
   (insert-into [elements element] "Inserts an element into the elements buffer.")

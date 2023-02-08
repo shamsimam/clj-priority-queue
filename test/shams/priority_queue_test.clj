@@ -119,7 +119,11 @@
         (is (= (pop pq) (.next pq)))
         (when (= variant :queue)
           (is (= (list 2 8 5 4 1 7 3 9 6) (seq pq)))
-          (is (= [2 8 5 4 1 7 3 9 6] (seq pq))))))))
+          (is (= [2 8 5 4 1 7 3 9 6] (seq pq))))))
+
+    (testing "large queues"
+      (let [pq (priority-queue identity :elements (range 50000))]
+        (is (seq pq))))))
 
 (deftest test-print-priority-queue
   (doseq [variant [:queue :set]]
